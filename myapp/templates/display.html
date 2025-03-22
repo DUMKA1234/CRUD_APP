@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEES RECORDS</title>
+</head>
+<body>
+    <table>
+<thead>
+    <tr>
+<th>Employees ID</th>
+<th>Employees Name</th>
+<th>Employees Email</th>
+<th>Employees Contact</th>
+
+    </tr>
+</thead>
+<tbody>
+    {% for Employee in Employees%}
+    <tr>
+        <td>{{ Employee.empid}}</td>
+        <td>{{ Employee.Name}}</td>
+        <td>{{ Employee.Email}}</td>
+        <td>{{ Employee.contact}}</td>
+</tbody>
+</tr>
+{% endfor %}
+    </table>
+</body>
+</html>
